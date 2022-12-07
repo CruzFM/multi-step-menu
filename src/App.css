@@ -79,3 +79,14 @@ button{
 .h-95{
   height: 95%;
 }
+
+
+/*-------------------------------------------------*/
+/* -------------- SPECIFIC CLASSES ---------------- */
+/*-------------------------------------------------*/
+
+.sidebarBg{
+  background-image: url("./images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
