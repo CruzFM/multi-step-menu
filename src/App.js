@@ -1,4 +1,5 @@
 import "./App.css";
+import { Home } from "./Components/Home/Home";
 
 function App() {
   return (
@@ -32,10 +33,7 @@ function App() {
       using our platform. If you ever need support, please feel free to email us
       at support@loremgaming.com. */}
       {/* Step 5 end   */}
-
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Home />
     </div>
   );
 }
