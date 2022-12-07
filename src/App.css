@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
+/*-------------------*/
+/*       RESET       */
+/*-------------------*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/*Set up the body*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+/* Box sizing */
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+/* Reset Margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture{
+  margin: 0;
+}
+
+
+
+/* To make images easier to work with */
+img,
+picture{
+  max-width: 100%;
+  display: block;
+}
+
+/* To make form elements easier to work with */
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+/* remove animations for people who turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
