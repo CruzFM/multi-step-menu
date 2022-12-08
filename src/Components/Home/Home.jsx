@@ -15,18 +15,19 @@ export const Home = ()=>{
                 <aside className=" w-screen h-1/4 sidebarBg-mov md:h-95 md:w-3/12 md:mx-3 p-4">
                     {/* md:py-4 md:px-2  */}
                     {/* <p>Hola Fer</p> */}
-                    <ul className="flex gap-1 md:flex-col border border-solid border-black justify-around px-9">
-                        <li className="border border-solid border-white rounded-full px-2">
-                            1
+                    <ul className="flex gap-1 md:flex-col border border-solid border-black justify-around px-9 py-2 md:px-0 md:p-2 md:h-2/3">
+                        <li className="border border-solid border-white px-2">
+                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 1 </span>
+                            
                         </li>
                         <li className="border border-solid border-white rounded-full px-2">
-                            2
+                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 2 </span>
                         </li>
                         <li className="border border-solid border-white rounded-full px-2">
-                            3
+                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 3 </span>
                         </li>
                         <li className="border border-solid border-white rounded-full px-2">
-                            4
+                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 4 </span>
                         </li>
                     </ul>
                 </aside>
