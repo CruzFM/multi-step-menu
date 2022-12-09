@@ -3,6 +3,8 @@ import * as Yup from 'yup'
 
 export const StepOne = ()=>{
 
+    // This makes it easier to validate the user inputs on the form fields.
+    // each object key is the name of the input.
     const validationSchema = Yup.object().shape({
         name: Yup.string().required("*Your name is required."),
         email: Yup.string()
@@ -15,10 +17,11 @@ export const StepOne = ()=>{
         <section>
             <h2 className=' text-2xl font-semibold'>Personal Info</h2>
             <p className=' text-gray-500 font-medium'>Please, provide your name, email adress, and phone number.</p>
-            <div>
+            <div className='py-2'>
                 <Formik
                 validationSchema={validationSchema}
                 initialValues={{name:"", email:"", phone:""}}
+                // Still no submit added.
                 onSubmit={(values)=>{console.log(values)}}
                 >
                     { ({values, errors, touched}) =>(
@@ -41,20 +44,6 @@ export const StepOne = ()=>{
                         </Form>
                     )}
                 </Formik>
-                {/* <form>
-                    <div>
-                        <label>Name</label>
-                        <input type="text" name="name" className="border border-solid border-black"/>
-                    </div>
-                    <div>
-                        <label>Email adress</label>
-                        <input type="email" name="email" className="border border-solid border-black"/>
-                    </div>
-                    <div>
-                        <label>Phone Number</label>
-                        <input type="tel" name="phone" className="border border-solid border-black"/>
-                    </div>
-                </form> */}
             </div>
         </section>
     )

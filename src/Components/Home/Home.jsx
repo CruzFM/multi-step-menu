@@ -22,8 +22,10 @@ export const Home = ()=>{
                         </li>
                     </ul>
                 </aside>
+                {/* Chances are that this whole div must be a component by itself */}
                 <div className=" h-3/4 flex-col border border-black border-solid md:w-9/12 md:h-5/6">
                     <div className=" h-4/5 bg-sky-100">
+
                         <article className=" w-11/12 bg-white  border border-solid border-black  absolute top-28 left-1 h-3/5 py-3 px-4 rounded-lg md:static md:w-full md:h-full md:rounded-none">
                             {/* absolute top-24 left-1  */}
                             <StepOne />
