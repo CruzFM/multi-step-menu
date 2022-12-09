@@ -1,3 +1,5 @@
+import { StepOne } from "../StepOne/StepOne"
+
 export const Home = ()=>{
     return(
         <main className="flex items-start justify-center h-screen bg-sky-100 relative md:items-center">
@@ -8,7 +10,6 @@ export const Home = ()=>{
                     <ul className="flex gap-1 md:flex-col border border-solid border-black justify-around px-9 py-2 md:px-0 md:p-2 md:h-2/3">
                         <li className="border border-solid border-black px-2">
                             <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 1 </span>
-                            
                         </li>
                         <li className="border border-solid border-black rounded-full px-2">
                             <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 2 </span>
@@ -26,10 +27,12 @@ export const Home = ()=>{
                         <article className=" w-11/12 bg-white  border border-solid border-black  absolute top-28 left-1 h-2/4 p-3 rounded-lg md:static md:w-full md:h-full md:rounded-none">
                             {/* absolute top-24 left-1  */}
                             <p>Hola a todos.</p>
+                            <StepOne />
                         </article>
                     </div>
                     <article className=" bg-white h-1/5 p-4 flex justify-between items-center">
-                        <a href="https://google.com.ar" className="text-white">Something</a>
+                        {/* This component below is just a test, and shouldn't be a white text. just testing displayment. */}
+                        <span className="text-white">Something</span>
                         <button className="py-3 px-4 bg-blue-900 text-white rounded">Next Step</button>
                     </article>
                 </div>
