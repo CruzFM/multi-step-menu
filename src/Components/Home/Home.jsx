@@ -6,18 +6,18 @@ export const Home = ()=>{
                     {/* md:py-4 md:px-2  */}
                     {/* <p>Hola Fer</p> */}
                     <ul className="flex gap-1 md:flex-col border border-solid border-black justify-around px-9 py-2 md:px-0 md:p-2 md:h-2/3">
-                        <li className="border border-solid border-white px-2">
-                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 1 </span>
+                        <li className="border border-solid border-black px-2">
+                            <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 1 </span>
                             
                         </li>
-                        <li className="border border-solid border-white rounded-full px-2">
-                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 2 </span>
+                        <li className="border border-solid border-black rounded-full px-2">
+                            <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 2 </span>
                         </li>
-                        <li className="border border-solid border-white rounded-full px-2">
-                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 3 </span>
+                        <li className="border border-solid border-black rounded-full px-2">
+                            <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 3 </span>
                         </li>
-                        <li className="border border-solid border-white rounded-full px-2">
-                            <span className="rounded-full px-2 py-1 border border-solid border-black"> 4 </span>
+                        <li className="border border-solid border-black rounded-full px-2">
+                            <span className="rounded-full px-2 py-1 border border-solid border-white text-white"> 4 </span>
                         </li>
                     </ul>
                 </aside>
@@ -28,8 +28,9 @@ export const Home = ()=>{
                             <p>Hola a todos.</p>
                         </article>
                     </div>
-                    <article className=" bg-slate-400 h-1/5">
-                        Next
+                    <article className=" bg-white h-1/5 p-4 flex justify-between items-center">
+                        <a href="https://google.com.ar" className="text-white">Something</a>
+                        <button className="py-3 px-4 bg-blue-900 text-white rounded">Next Step</button>
                     </article>
                 </div>
             </div>
