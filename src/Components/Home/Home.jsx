@@ -24,9 +24,8 @@ export const Home = ()=>{
                 </aside>
                 <div className=" h-3/4 flex-col border border-black border-solid md:w-9/12 md:h-5/6">
                     <div className=" h-4/5 bg-sky-100">
-                        <article className=" w-11/12 bg-white  border border-solid border-black  absolute top-28 left-1 h-2/4 p-3 rounded-lg md:static md:w-full md:h-full md:rounded-none">
+                        <article className=" w-11/12 bg-white  border border-solid border-black  absolute top-28 left-1 h-3/5 py-3 px-4 rounded-lg md:static md:w-full md:h-full md:rounded-none">
                             {/* absolute top-24 left-1  */}
-                            <p>Hola a todos.</p>
                             <StepOne />
                         </article>
                     </div>
