@@ -29,17 +29,17 @@ export const StepOne = ()=>{
                             <div className='flex flex-col'>
                                 <label>Name:</label>
                                 <Field type="text" name="name" className="px-2 py-1 border border-solid border-black"/>
-                                {errors.name && touched.name && (<div className=" text-red-600">{errors.name}</div>)}
+                                {errors.name && touched.name && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.name}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Email adress:</label>
                                 <Field type="email" name="email" className="px-2 py-1 border border-solid border-black"/>
-                                {errors.email && touched.email && (<div className=" text-red-600">{errors.email}</div>)}
+                                {errors.email && touched.email && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.email}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Phone Number:</label>
                                 <Field type="tel" name="phone" className="px-2 py-1 border border-solid border-black"/>
-                                {errors.phone && touched.phone && (<div className=" text-red-600">{errors.phone}</div>)}
+                                {errors.phone && touched.phone && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.phone}</div>)}
                             </div>
                         </Form>
                     )}
