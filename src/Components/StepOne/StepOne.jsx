@@ -28,17 +28,17 @@ export const StepOne = ()=>{
                         <Form className='flex flex-col gap-3'>
                             <div className='flex flex-col'>
                                 <label>Name:</label>
-                                <Field type="text" name="name" className="px-2 py-1 border border-solid border-black"/>
+                                <Field type="text" name="name" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.name && touched.name && "border-red-400"}`}/>
                                 {errors.name && touched.name && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.name}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Email adress:</label>
-                                <Field type="email" name="email" className="px-2 py-1 border border-solid border-black"/>
+                                <Field type="email" name="email" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.email &&  touched.email &&"border-red-400"}`}/>
                                 {errors.email && touched.email && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.email}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Phone Number:</label>
-                                <Field type="tel" name="phone" className="px-2 py-1 border border-solid border-black"/>
+                                <Field type="tel" name="phone" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.phone && touched.phone && "border-red-400"}`}/>
                                 {errors.phone && touched.phone && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.phone}</div>)}
                             </div>
                         </Form>
