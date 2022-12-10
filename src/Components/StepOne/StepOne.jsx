@@ -6,11 +6,11 @@ export const StepOne = ()=>{
     // This makes it easier to validate the user inputs on the form fields.
     // each object key is the name of the input.
     const validationSchema = Yup.object().shape({
-        name: Yup.string().required("*Your name is required."),
+        name: Yup.string().required("This field is required."),
         email: Yup.string()
             .email()
-            .required("*Your email is required."),
-        phone: Yup.number().required("*Your phone number is required."),
+            .required("This field is required."),
+        phone: Yup.number().required("This field is required."),
     })
 
     return(
@@ -29,17 +29,17 @@ export const StepOne = ()=>{
                             <div className='flex flex-col'>
                                 <label>Name:</label>
                                 <Field type="text" name="name" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.name && touched.name && "border-red-400"}`}/>
-                                {errors.name && touched.name && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.name}</div>)}
+                                {errors.name && touched.name && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm font-semibold">{errors.name}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Email adress:</label>
                                 <Field type="email" name="email" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.email &&  touched.email &&"border-red-400"}`}/>
-                                {errors.email && touched.email && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.email}</div>)}
+                                {errors.email && touched.email && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm font-semibold">{errors.email}</div>)}
                             </div>
                             <div className='flex flex-col'>
                                 <label>Phone Number:</label>
                                 <Field type="tel" name="phone" className={`px-2 py-1 border border-solid border-gray-300 rounded-lg ${errors.phone && touched.phone && "border-red-400"}`}/>
-                                {errors.phone && touched.phone && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm">{errors.phone}</div>)}
+                                {errors.phone && touched.phone && (<div className=" text-red-600 md:absolute md:[top: 0px] md:[right:5%] text-sm font-semibold">{errors.phone}</div>)}
                             </div>
                         </Form>
                     )}
